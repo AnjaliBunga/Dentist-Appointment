@@ -38,9 +38,9 @@ const connectDB = async () => {
   }
 };
 
-const dentistRoutes = require('./Routes/dentistRoutes');
+const dentistRoutes = require('./routes/dentistRoutes');
 app.use('/api/dentists', dentistRoutes);
-const appointmentRoutes = require('./Routes/appointmentRoutes');
+const appointmentRoutes = require('./routes/appointmentRoutes');
 app.use('/api/appointments', appointmentRoutes);
 
 const startServer = async () => {
